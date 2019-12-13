@@ -1,0 +1,114 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\MelisaBegić\\Downloads\\ispravkaMelisaIB150218\\IB150218_MOBILE\\IB150218_MOBILE.UWP\\IB150218_MOBILE.UWP.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\MelisaBegić\\Downloads\\ispravkaMelisaIB150218\\IB150218_MOBILE\\IB150218_MOBILE.UWP\\IB150218_MOBILE.UWP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MelisaBegić\\Downloads\\ispravkaMelisaIB150218\\IB150218_MOBILE\\IB150218_MOBILE.UWP\\IB150218_MOBILE.UWP.csproj",
+        "projectName": "IB150218_MOBILE.UWP",
+        "projectPath": "C:\\Users\\MelisaBegić\\Downloads\\ispravkaMelisaIB150218\\IB150218_MOBILE\\IB150218_MOBILE.UWP\\IB150218_MOBILE.UWP.csproj",
+        "packagesPath": "C:\\Users\\MelisaBegić\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MelisaBegić\\Downloads\\ispravkaMelisaIB150218\\IB150218_MOBILE\\IB150218_MOBILE.UWP\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MelisaBegić\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.16299"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.16299": {
+            "projectReferences": {
+              "C:\\Users\\MelisaBegić\\Downloads\\ispravkaMelisaIB150218\\IB150218_PCL\\IB150218_PCL.csproj": {
+                "projectPath": "C:\\Users\\MelisaBegić\\Downloads\\ispravkaMelisaIB150218\\IB150218_PCL\\IB150218_PCL.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.16299": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3-beta1, )"
+            },
+            "PCLCrypto": {
+              "target": "Package",
+              "version": "[2.0.147, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Net.Http.Formatting.Extension": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.3.0.778476-pre1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\MelisaBegić\\Downloads\\ispravkaMelisaIB150218\\IB150218_PCL\\IB150218_PCL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MelisaBegić\\Downloads\\ispravkaMelisaIB150218\\IB150218_PCL\\IB150218_PCL.csproj",
+        "projectName": "IB150218_PCL",
+        "projectPath": "C:\\Users\\MelisaBegić\\Downloads\\ispravkaMelisaIB150218\\IB150218_PCL\\IB150218_PCL.csproj"
+      },
+      "frameworks": {
+        "portable46-net451+win81": {}
+      }
+    }
+  }
+}

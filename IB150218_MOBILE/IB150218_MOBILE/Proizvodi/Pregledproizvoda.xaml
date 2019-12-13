@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:IB150218_MOBILE.Converter"
+                 BackgroundImage="pozadina3.jpg"
+             x:Class="IB150218_MOBILE.Proizvodi.Pregledproizvoda">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="imgConv"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="70,70,70,10" VerticalOptions="CenterAndExpand" Style="{StaticResource Container}" BackgroundColor="#8FFFFFFF">
+
+            <Picker x:Name="pickerh" 
+        Title="Odaberite vrstu " 
+                        TitleColor="#FFFFFFFF"
+        ItemsSource="{Binding VrsteList}"
+        ItemDisplayBinding="{Binding Naziv}"
+        SelectedItem="{Binding SelectedVrste}"
+                    SelectedIndexChanged="Pickerh_SelectedIndexChanged"
+                    />
+            <ListView x:Name="MenuItemsListView" 
+            SeparatorVisibility="None"
+                      ItemTapped="MenuItemsListView_ItemTapped"
+            HasUnevenRows="true">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HorizontalOptions="CenterAndExpand"  >
+                                <Grid Padding="50,20,50,20" >
+
+                                    <Image Grid.Column="0" Source="{Binding SlikaThumb, Converter={StaticResource imgConv}}" HorizontalOptions="Start" Aspect="AspectFit"></Image>
+
+
+                                    <StackLayout Grid.Column="1">
+                                        <StackLayout   >
+                                            <Label  
+                                    Text="{Binding Naziv}" FontAttributes="Bold" />
+                                        </StackLayout>
+                                        <StackLayout >
+
+                                            <Label
+                                    Text="{Binding Sifra}"  />
+                                        </StackLayout>
+                                        <StackLayout   >
+
+                                            <Label 
+                                    Text="{Binding Cijena}"/>
+                                        </StackLayout>
+                                        <StackLayout >
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

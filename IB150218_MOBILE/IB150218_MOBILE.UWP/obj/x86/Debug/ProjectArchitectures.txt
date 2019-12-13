@@ -1,0 +1,2 @@
+C:\Users\MelisaBegić\Downloads\ispravkaMelisaIB150218\IB150218_MOBILE\IB150218_MOBILE.UWP\IB150218_MOBILE.UWP.csproj;x86
+C:\Users\MelisaBegić\Downloads\ispravkaMelisaIB150218\IB150218_PCL\IB150218_PCL.csproj;neutral

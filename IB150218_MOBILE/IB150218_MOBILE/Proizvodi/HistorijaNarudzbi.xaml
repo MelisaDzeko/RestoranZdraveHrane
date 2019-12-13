@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:IB150218_MOBILE.Converter"
+             BackgroundImage="pozadina3.jpg"
+             x:Class="IB150218_MOBILE.Proizvodi.HistorijaNarudzbi">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="imgConv"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Padding="150,50,150,50" >
+        <Label Text="Historija narudžbi"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="10"  BackgroundColor="#8FFFFFFF" >
+            <ListView x:Name="MenuItemsListView" 
+            SeparatorVisibility="None"
+            HasUnevenRows="true">
+
+                <ListView.ItemTemplate   >
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HorizontalOptions="CenterAndExpand" >
+                                <Grid Padding="15"  BackgroundColor="#8FFFFFFF"  >
+                                  
+                                            <Image Grid.Column="0" Source="{Binding SlikaThumb, Converter={StaticResource imgConv}}" HorizontalOptions="CenterAndExpand" Aspect="AspectFit"></Image>
+
+                                    <StackLayout Grid.Column="1"  >
+                                        <StackLayout   >
+                                            <Label
+                                              HorizontalOptions="EndAndExpand"
+                                    Text="Datum narudžbe" FontAttributes="Bold" />
+                                        </StackLayout>
+                                        <StackLayout >
+                                            <Label HorizontalOptions="EndAndExpand"
+                                    Text="Proizvod" FontAttributes="Bold"  />
+                                        </StackLayout>
+                                        <StackLayout >
+                                            <Label HorizontalOptions="EndAndExpand"
+                                    Text="Ukupan iznos" FontAttributes="Bold"  />
+                                        </StackLayout>
+                                        <StackLayout >
+                                            <Label HorizontalOptions="EndAndExpand"
+                                    Text="Status" FontAttributes="Bold"  />
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Grid.Column="2"  >
+                                        <StackLayout   >
+                                            <Label  
+                                    Text="{Binding DatumNaruczbe}" />
+                                        </StackLayout>
+                                        <StackLayout >
+
+                                            <Label
+                                    Text="{Binding Naziv}"  />
+                                        </StackLayout>
+                                        <StackLayout >
+
+                                            <Label
+                                    Text="{Binding Iznos}"  />
+                                        </StackLayout>
+                                        <StackLayout >
+
+                                            <Label
+                                    Text="{Binding StatusNarudzbe}"  />
+                                        </StackLayout>
+                                    </StackLayout>
+                                    
+                                </Grid>
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 BackgroundImage="pozadina3.jpg"
+             x:Class="IB150218_MOBILE.Proizvodi.AktivneNarudzbe">
+    <ContentPage.Content>
+        <StackLayout Padding="50" >
+            <Label Text="Aktivne narudžbe"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Padding="100"  BackgroundColor="#8FFFFFFF" >
+                <ListView x:Name="MenuItemsListView" 
+            SeparatorVisibility="None"
+                    
+            HasUnevenRows="true">
+
+                    <ListView.ItemTemplate   >
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout HorizontalOptions="CenterAndExpand" >
+                                    <Grid Padding="15" >
+
+                                        <StackLayout Grid.Column="0" Padding="10"  >
+                                            <StackLayout   >
+                                                <Label
+                                              HorizontalOptions="EndAndExpand"
+                                    Text="Naziv" FontAttributes="Bold" />
+                                            </StackLayout>
+                                            <StackLayout >
+                                                <Label HorizontalOptions="EndAndExpand"
+                                    Text="Sifra" FontAttributes="Bold"  />
+                                            </StackLayout>
+                                            <StackLayout >
+                                                <Label HorizontalOptions="EndAndExpand"
+                                    Text="Cijena" FontAttributes="Bold"  />
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Grid.Column="1"  Padding="10">
+                                            <StackLayout   >
+                                                <Label  
+                                    Text="{Binding Naziv}" />
+                                            </StackLayout>
+                                            <StackLayout >
+
+                                                <Label
+                                    Text="{Binding Sifra}"  />
+                                            </StackLayout>
+                                            <StackLayout >
+
+                                                <Label
+                                    Text="{Binding Cijena}"  />
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Grid>
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Label x:Name="IznosLabel" Text="{Binding StringFormat}"></Label>
+
+                <Button x:Name="Zakljuci" Text="Zaključi narudžbu" Clicked="Zakljuci_Clicked"></Button>
+                <Button x:Name="Pretraga" Text="Pretraga proizvoda" Clicked="Pretraga_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

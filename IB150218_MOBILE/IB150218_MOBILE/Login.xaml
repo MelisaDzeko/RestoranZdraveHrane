@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImageSource="pozadina3.jpg"
+             x:Class="IB150218_MOBILE.Login">
+    <StackLayout Padding="50">
+        <Label Text="Login"
+                FontAttributes="Bold"  FontSize="Medium"
+                HorizontalOptions="CenterAndExpand" />
+        <Image Source="log.png"  HorizontalOptions="CenterAndExpand"></Image>
+        <StackLayout VerticalOptions="CenterAndExpand" Style="{StaticResource Container}" Padding="100,30,100,50">
+            <Label x:Name="UsernameError" IsVisible="False" TextColor="Red" FontSize="11"/>
+            <Entry x:Name="inputUsername" Placeholder="Username" Text="mobile" />
+            <Label x:Name="PasswordError" IsVisible="False" TextColor="Red" FontSize="11"/>
+            <Entry x:Name="inputPassword" Placeholder="Password" Text="test" IsPassword="True" />
+            <Button x:Name="btnLogin" Text="Login" Clicked="BtnLogin_Clicked" FontAttributes="Bold" />
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

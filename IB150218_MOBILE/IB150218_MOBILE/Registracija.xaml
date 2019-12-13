@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  BackgroundImageSource="pozadina3.jpg"
+             x:Class="IB150218_MOBILE.Registracija">
+    <ContentPage.Content>
+        <StackLayout Padding="50,20,50,0" BackgroundColor="#8FFFFFFF">
+            <Image Source="reg.png"  HorizontalOptions="CenterAndExpand"></Image>
+            <!-- Form inputs -->
+
+        <Label Text="Ime"/>
+        <Label x:Name="ImeError" FontSize="11" TextColor="Red" IsVisible="False"/>
+        <Entry x:Name="inputIme"/>
+
+        <Label Text="Prezime"/>
+        <Label x:Name="PrezimeError" FontSize="11" TextColor="Red" IsVisible="False"/>
+        <Entry x:Name="inputPrezime"/>
+
+
+        <Label Text="E-mail"/>
+        <Label x:Name="MailError" FontSize="11" TextColor="Red" IsVisible="False"/>
+        <Entry x:Name="inputMail"/>
+
+        <Label Text="Username"/>
+        <Label x:Name="UsernameError" FontSize="11" TextColor="Red" IsVisible="False"/>
+        <Entry x:Name="inputUsername" />
+
+        <Label Text="Password"/>
+        <Label x:Name="PasswordError" FontSize="11" TextColor="Red" IsVisible="False"/>
+        <Entry x:Name="inputPasswordReg" IsPassword="True"/>
+
+
+
+        <!-- Button section -->
+            <Button x:Name="BtnRegistracija" Text="Registrujte se" Clicked="BtnRegistracija_Clicked" FontAttributes="Bold"  />
+        </StackLayout>
+        </ContentPage.Content>
+</ContentPage>

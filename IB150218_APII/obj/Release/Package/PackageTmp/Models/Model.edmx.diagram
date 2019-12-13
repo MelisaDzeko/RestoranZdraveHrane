@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f49c88199b8442819bec7566cea6e0ef" Name="Diagram1">
+        <EntityTypeShape EntityType="eProdajaModel.Izlazi" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.IzlaziStavke" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.JediniceMjere" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.Korisnici" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.Kupci" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.Meni" Width="1.5" PointX="3" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.NarudzbaStavke" Width="1.5" PointX="8.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.Narudzbe" Width="1.5" PointX="0.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.Ocjene" Width="1.5" PointX="8.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.Proizvodi" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.Uloge" Width="1.5" PointX="1.5" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eProdajaModel.VrsteProizvoda" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="eProdajaModel.FK__Izlazi__Korisnik__66EA454A" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK__Izlazi__Narudzba__65F62111" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK__IzlaziSta__Izlaz__7AF13DF7" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK__IzlaziSta__Proiz__6E8B6712" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK_Proizvodi_JediniceMjere" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK__Korisnici__Uloga__2CBDA3B5" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK__Meni__KorisnikID__41B8C09B" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK_Narudzbe_Kupci" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK_Ocjene_Kupci" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK_NarudzbaStavke_Narudzbe" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK_NarudzbaStavke_Proizvodi" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK_Ocjene_Proizvodi" ManuallyRouted="false" />
+        <AssociationConnector Association="eProdajaModel.FK_Proizvodi_VrsteProizvoda" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
